@@ -1,6 +1,6 @@
 // Complete the js code
 function Car(make, model) {
-	if(typeof make !== "string" || typeof model !== "string"){
+	if(typeof make !== "string" || model !== "string"){
         throw new Error("make and model should be string")
     }
     this.make = make
@@ -20,7 +20,7 @@ function SportsCar(make, model, topSpeed) {
 SportsCar.prototype = Object.create(Car.prototype)
 
 SportsCar.prototype.getTopSpeed = function(){
-    this.topSpeed
+    return this.topSpeed
 }
 // Do not change the code below
 window.Car = Car;
