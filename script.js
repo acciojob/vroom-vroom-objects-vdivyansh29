@@ -1,6 +1,7 @@
 // Complete the js code
 function Car(make, model) {
-	if(typeof (make !== "string" || model !== "string")){
+	if(
+   typeof make !== "string" || typeof model !== "string"){
         throw new Error("make and model should be string")
     }
     this.make = make
